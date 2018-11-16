@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  hello-ios
-//
-//  Created by yfn on 2018/11/13.
-//  Copyright © 2018年 ljs. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
@@ -55,7 +47,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         logger.d("app将终止")
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 

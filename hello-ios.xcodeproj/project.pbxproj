@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C2023E8219AD3AA00803B69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2023E7219AD3AA00803B69 /* AppDelegate.swift */; };
-		8C2023EA219AD3AA00803B69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2023E9219AD3AA00803B69 /* ViewController.swift */; };
+		62032386219D749E0049B828 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62032385219D749E0049B828 /* WebKit.framework */; };
+		622FF9F6219EA0D600B41279 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622FF9F3219EA0D600B41279 /* HomeViewController.swift */; };
+		622FF9F7219EA0D600B41279 /* WebViewTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622FF9F4219EA0D600B41279 /* WebViewTestController.swift */; };
+		622FF9F8219EA0D600B41279 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622FF9F5219EA0D600B41279 /* Logger.swift */; };
+		622FF9FC219EA2FC00B41279 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622FF9FB219EA2FB00B41279 /* AlertController.swift */; };
+		62DDD44D219E784B00DF63BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DDD44C219E784B00DF63BF /* AppDelegate.swift */; };
 		8C2023ED219AD3AA00803B69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2023EB219AD3AA00803B69 /* Main.storyboard */; };
 		8C2023EF219AD3AC00803B69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2023EE219AD3AC00803B69 /* Assets.xcassets */; };
 		8C2023F2219AD3AC00803B69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2023F0219AD3AC00803B69 /* LaunchScreen.storyboard */; };
 		8C2023FD219AD3AC00803B69 /* hello_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2023FC219AD3AC00803B69 /* hello_iosTests.swift */; };
 		8C202408219AD3AC00803B69 /* hello_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C202407219AD3AC00803B69 /* hello_iosUITests.swift */; };
-		8C2BE3A7219BC01A0074AC66 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2BE3A6219BC01A0074AC66 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		62032385219D749E0049B828 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		622FF9F3219EA0D600B41279 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		622FF9F4219EA0D600B41279 /* WebViewTestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewTestController.swift; sourceTree = "<group>"; };
+		622FF9F5219EA0D600B41279 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		622FF9FB219EA2FB00B41279 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		62DDD44C219E784B00DF63BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C2023E4219AD3AA00803B69 /* hello-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hello-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C2023E7219AD3AA00803B69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C2023E9219AD3AA00803B69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8C2023EC219AD3AA00803B69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C2023EE219AD3AC00803B69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C2023F1219AD3AC00803B69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,7 +55,6 @@
 		8C202403219AD3AC00803B69 /* hello-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hello-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C202407219AD3AC00803B69 /* hello_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hello_iosUITests.swift; sourceTree = "<group>"; };
 		8C202409219AD3AC00803B69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C2BE3A6219BC01A0074AC66 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62032386219D749E0049B828 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +83,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62032384219D749E0049B828 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62032385219D749E0049B828 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		622FF9F2219EA0CB00B41279 /* ljs */ = {
+			isa = PBXGroup;
+			children = (
+				622FF9FA219EA15F00B41279 /* utils */,
+				622FF9F9219EA14900B41279 /* controller */,
+				62DDD44C219E784B00DF63BF /* AppDelegate.swift */,
+			);
+			path = ljs;
+			sourceTree = "<group>";
+		};
+		622FF9F9219EA14900B41279 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				622FF9F3219EA0D600B41279 /* HomeViewController.swift */,
+				622FF9F4219EA0D600B41279 /* WebViewTestController.swift */,
+				622FF9FB219EA2FB00B41279 /* AlertController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		622FF9FA219EA15F00B41279 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				622FF9F5219EA0D600B41279 /* Logger.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		8C2023DB219AD3AA00803B69 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +126,7 @@
 				8C2023FB219AD3AC00803B69 /* hello-iosTests */,
 				8C202406219AD3AC00803B69 /* hello-iosUITests */,
 				8C2023E5219AD3AA00803B69 /* Products */,
+				62032384219D749E0049B828 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +143,7 @@
 		8C2023E6219AD3AA00803B69 /* hello-ios */ = {
 			isa = PBXGroup;
 			children = (
-				8C2023E7219AD3AA00803B69 /* AppDelegate.swift */,
-				8C2023E9219AD3AA00803B69 /* ViewController.swift */,
-				8C2BE3A6219BC01A0074AC66 /* Utils.swift */,
+				622FF9F2219EA0CB00B41279 /* ljs */,
 				8C2023EB219AD3AA00803B69 /* Main.storyboard */,
 				8C2023EE219AD3AC00803B69 /* Assets.xcassets */,
 				8C2023F0219AD3AC00803B69 /* LaunchScreen.storyboard */,
@@ -190,6 +232,7 @@
 		8C2023DC219AD3AA00803B69 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ljs;
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = ljs;
@@ -259,9 +302,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C2023EA219AD3AA00803B69 /* ViewController.swift in Sources */,
-				8C2023E8219AD3AA00803B69 /* AppDelegate.swift in Sources */,
-				8C2BE3A7219BC01A0074AC66 /* Utils.swift in Sources */,
+				622FF9F7219EA0D600B41279 /* WebViewTestController.swift in Sources */,
+				622FF9FC219EA2FC00B41279 /* AlertController.swift in Sources */,
+				62DDD44D219E784B00DF63BF /* AppDelegate.swift in Sources */,
+				622FF9F6219EA0D600B41279 /* HomeViewController.swift in Sources */,
+				622FF9F8219EA0D600B41279 /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
