@@ -7,13 +7,11 @@ class WebViewTestController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var webView: WKWebView!
 
-    @IBOutlet weak var nav: UINavigationBar!
-
     override func viewDidLoad() {
         addressTextField.delegate = self
     }
 
-    @IBAction func openAddress(_ sender: UIButton?) {
+    private func openAddress() {
         addressTextField.resignFirstResponder()
         let address: String = addressTextField.text ?? "https://www.apple.com"
         if let url = URL(string: address) {
@@ -23,7 +21,7 @@ class WebViewTestController: UIViewController, UITextFieldDelegate {
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        openAddress(nil)
+        openAddress()
         return true
     }
 }

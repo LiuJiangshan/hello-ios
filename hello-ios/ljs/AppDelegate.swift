@@ -1,4 +1,5 @@
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -7,6 +8,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     let logger = Logger("AppDelegate", false)
 
+    let notificationDelegate = NotificationDelegate()
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         logger.d("触摸事件开始")
     }
@@ -17,7 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         logger.d("app启动")
-        // Override point for customization after application launch.
+        let center = UNUserNotificationCenter.current()
+        notificationDelegate.app = self
+        center.delegate = notificationDelegate
         return true
     }
 

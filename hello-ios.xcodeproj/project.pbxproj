@@ -12,6 +12,10 @@
 		622FF9F7219EA0D600B41279 /* WebViewTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622FF9F4219EA0D600B41279 /* WebViewTestController.swift */; };
 		622FF9F8219EA0D600B41279 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622FF9F5219EA0D600B41279 /* Logger.swift */; };
 		622FF9FC219EA2FC00B41279 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622FF9FB219EA2FB00B41279 /* AlertController.swift */; };
+		622FFA01219EBEB600B41279 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 622FFA00219EBEB600B41279 /* UserNotifications.framework */; };
+		626067BC21A255B000898ABE /* NotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626067BB21A255B000898ABE /* NotificationDelegate.swift */; };
+		626067BE21A257EA00898ABE /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626067BD21A257EA00898ABE /* Global.swift */; };
+		626067C421A2665E00898ABE /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626067C321A2665E00898ABE /* Extension.swift */; };
 		62DDD44D219E784B00DF63BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DDD44C219E784B00DF63BF /* AppDelegate.swift */; };
 		8C2023ED219AD3AA00803B69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2023EB219AD3AA00803B69 /* Main.storyboard */; };
 		8C2023EF219AD3AC00803B69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2023EE219AD3AC00803B69 /* Assets.xcassets */; };
@@ -43,6 +47,10 @@
 		622FF9F4219EA0D600B41279 /* WebViewTestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewTestController.swift; sourceTree = "<group>"; };
 		622FF9F5219EA0D600B41279 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		622FF9FB219EA2FB00B41279 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		622FFA00219EBEB600B41279 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		626067BB21A255B000898ABE /* NotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDelegate.swift; sourceTree = "<group>"; };
+		626067BD21A257EA00898ABE /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		626067C321A2665E00898ABE /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		62DDD44C219E784B00DF63BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C2023E4219AD3AA00803B69 /* hello-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hello-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2023EC219AD3AA00803B69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				622FFA01219EBEB600B41279 /* UserNotifications.framework in Frameworks */,
 				62032386219D749E0049B828 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +95,7 @@
 		62032384219D749E0049B828 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				622FFA00219EBEB600B41279 /* UserNotifications.framework */,
 				62032385219D749E0049B828 /* WebKit.framework */,
 			);
 			name = Frameworks;
@@ -97,6 +107,8 @@
 				622FF9FA219EA15F00B41279 /* utils */,
 				622FF9F9219EA14900B41279 /* controller */,
 				62DDD44C219E784B00DF63BF /* AppDelegate.swift */,
+				626067BD21A257EA00898ABE /* Global.swift */,
+				626067BB21A255B000898ABE /* NotificationDelegate.swift */,
 			);
 			path = ljs;
 			sourceTree = "<group>";
@@ -115,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				622FF9F5219EA0D600B41279 /* Logger.swift */,
+				626067C321A2665E00898ABE /* Extension.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -303,10 +316,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				622FF9F7219EA0D600B41279 /* WebViewTestController.swift in Sources */,
+				626067BC21A255B000898ABE /* NotificationDelegate.swift in Sources */,
 				622FF9FC219EA2FC00B41279 /* AlertController.swift in Sources */,
 				62DDD44D219E784B00DF63BF /* AppDelegate.swift in Sources */,
 				622FF9F6219EA0D600B41279 /* HomeViewController.swift in Sources */,
 				622FF9F8219EA0D600B41279 /* Logger.swift in Sources */,
+				626067BE21A257EA00898ABE /* Global.swift in Sources */,
+				626067C421A2665E00898ABE /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
